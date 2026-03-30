@@ -1,0 +1,23 @@
+.view-cars-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center;    /* Centers items horizontally in the container */
+  padding: 40px 20px;
+  gap: 20px;              /* Adds consistent space between the items */
+  min-height: 100vh;
+  /* Optional: Add a background image here to match the Corvette aesthetic */
+}
+
+/* Target the .car-card class inside the container for the hover effect */
+.view-cars-container .car-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.view-cars-container .car-card:hover {
+  /* Enlarges the item slightly (2%) */
+  transform: scale(1.02); 
+  
+  /* Optional: Adds a subtle glow effect on hover to match the "enlarging" feel */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.1);
+}

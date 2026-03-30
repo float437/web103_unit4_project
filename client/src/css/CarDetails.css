@@ -1,0 +1,96 @@
+.car-card-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 8px;
+  width: 900px; /* Adjust based on your layout needs */
+  color: white;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.car-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.header-icon {
+  color: #ff4d4d; /* Red car icon */
+}
+
+.car-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.car-price-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.price-icon {
+  color: #d4af37; /* Gold for the money bag/dollar icon */
+}
+
+.price-text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Grid Layout for the 4 preview images */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.grid-box {
+  background: #222;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Specific styling for the color swatch box if needed */
+.exterior-color-box {
+  background: #e0e0e0;
+}
+
+/* Button Styling */
+.button-group {
+  display: flex;
+  gap: 15px;
+}
+
+.edit-btn, .delete-btn {
+  background-color: #8b0000; /* Dark red */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #b30000;
+}
